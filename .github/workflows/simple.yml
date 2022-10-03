@@ -1,0 +1,15 @@
+name: Shell Commands
+on: [push]
+jobs:
+  run-first-message:
+    name: Run First Message
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello!
+        run: echo "Hello Matias!"
+      - name: Multiline script
+        run: |
+          node -v
+          npm -v
+      - name: Say Bye!
+        run: echo "Good Bye Matias!"
